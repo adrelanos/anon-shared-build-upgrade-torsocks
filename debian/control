@@ -1,0 +1,27 @@
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+Source: anon-shared-build-upgrade-torsocks
+Section: misc
+Priority: optional
+Maintainer: Patrick Schleizer <adrelanos@riseup.net>
+Build-Depends: debhelper (>= 8), faketime, git
+Homepage: https://github.com/Whonix/anon-shared-build-upgrade-torsocks
+Vcs-Browser: https://github.com/Whonix/anon-shared-build-upgrade-torsocks
+Vcs-Git: https://github.com/Whonix/anon-shared-build-upgrade-torsocks.git
+Standards-Version: 3.9.4
+
+Package: anon-shared-build-upgrade-torsocks
+Architecture: all
+Depends: anon-shared-build-apt-sources-tpo, ${misc:Depends}
+Description: Build chroot script for upgrading Tor on Anonymity Distributions
+ Upgrades packages torsocks during the build process from The Tor Project's APT
+ repository using /etc/apt/sources.list.d/torproject.list.
+ .
+ APT (timeout) options are supported through the apt_timeout_opts environment
+ variable. Enabling an apt-cache is supported by using an exported
+ maybe_enable_apt_cache bash function.
+ .
+ This package is produced independently of, and carries no guarantee from,
+ The Tor Project.
