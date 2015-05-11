@@ -48,6 +48,7 @@ fi
 ## in case that is more current than the Debian repository.
 apt-get \
    $apt_timeout_opts \
+   $apt_misc_opts \
    -o Dir::Etc::sourcelist="/etc/apt/sources.list.d/torproject.list" \
    $apt_sourceparts \
    --yes \
