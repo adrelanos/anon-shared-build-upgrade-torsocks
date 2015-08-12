@@ -4,8 +4,7 @@ Upgrades packages torsocks during the build process from The Tor Project's APT
 repository using /etc/apt/sources.list.d/torproject.list.
 
 APT (timeout) options are supported through the apt_timeout_opts environment
-variable. Enabling an apt-cache is supported by using an exported
-aptcachemaybeenable bash function.
+variable.
 
 This package is produced independently of, and carries no guarantee from,
 The Tor Project.
